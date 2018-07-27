@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700');
 
-$ffStack: 'Arial', sans-serif;
-$ffRoboto: "Roboto",$ffStack;
+$ff-Stack: 'Arial', sans-serif;
+$ff-Muli: "Muli", $ff-Stack;
+
+$c-navtab: #c6c7c8;
+$c-main: #66b2ff;
+
+body {
+  background: #f8f9fa;
+}

@@ -1,0 +1,49 @@
+@import "../../../styles";
+
+header {
+  display: inline-flex;
+  a.logo {
+    img {
+      width: 14em;
+    }
+  }
+}
+
+nav.navbar {
+  background: #fff;
+  justify-content: space-around;
+  display: inline-flex;
+
+  a.navbar-brand {
+    font-family: $ff-Muli;
+    font-weight: 200;
+    color: $c-navtab;
+    transition: color .5s ease, border .5s ease;
+
+    svg {
+      font-size: 30px;
+      display: block;
+      visibility: hidden;
+      position: relative;
+      left: 35px;
+    }
+
+    &.active {
+      color: dimgrey;
+
+      svg {
+        visibility: visible;
+
+      }
+    }
+
+    &:hover {
+      color: $c-main ;
+      border-bottom: 1px solid $c-main;
+    }
+    &.check svg {
+      left: 30px;
+    }
+  }
+}
+

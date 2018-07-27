@@ -1,3 +1,31 @@
-.container {
+@import "../../../styles";
 
-}
+  .row {
+    display: flex;
+  }
+
+  .add-pass {
+    margin-bottom: 20px;
+    margin-left: 353px;
+  }
+  .pass-input-contain {
+    display: flex;
+    flex-direction: column;
+    input {
+      background: transparent;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      transition: border-bottom .8s ease;
+      border-color: #efefef;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $c-main;
+      }
+    }
+  }
+
