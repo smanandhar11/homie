@@ -1,5 +1,19 @@
 <div class="container">
   <div class="row">
+    <div class="add-pass col-sm-4">
+      <a (click)="addPass()" class="add-pass" *ngIf="!inputActive">
+        <i class="fa fa-plus-circle" ></i>
+      </a>
+      <!--Add pass template-->
+      <div class="pass-input-contain" *ngIf="inputActive">
+        <input type="text" #outlet placeholder="Outlet" required/>
+        <input type="password" #password placeholder="Password" required/>
+        <input type="password" #confPassword placeholder="Passowrd Confirm" required/>
+        <input type="text" #hint placeholder="hint (Optional)" />
+        <button class="btn-success" (click)="passSubmit()">Submit</button>
+      </div>
+    </div>
+
     <div class="saved-pass-con col-sm-8">
       <div class="shell">
 
@@ -10,10 +24,7 @@
     </div>
 
 
-    <div class="add-pass col-sm-4">
-      <a href="#">
-        <i class="fa fa-plus-circle"></i>
-      </a>
-    </div>
+
+
   </div>
 </div>
